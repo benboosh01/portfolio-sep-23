@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Freelance from "./components/Freelance";
 import Nav from "./components/Nav";
 import About from "./components/About";
+import Experience from "./components/Experience";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
             <About />
             <Projects />
             <Freelance />
+            <Experience />
             <Footer />
         </main>
     );

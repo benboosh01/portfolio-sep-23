@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Link from 'next/link'
 
 const tabs = [
     { name: "Home", href: "#top", current: true },
     { name: "About", href: "#about", current: false },
     { name: "Projects", href: "#projects", current: false },
     { name: "Freelance", href: "#freelance", current: false },
+    { name: "Experience", href: "#experience", current: false },
 ];
 
 function classNames(...classes) {
@@ -25,7 +27,7 @@ export default function Nav() {
                         aria-label="Tabs"
                     >
                         {tabs.map((tab) => (
-                            <a
+                            <Link
                                 key={tab.name}
                                 onClick={() => setActiveTab(tab.name)}
                                 href={tab.href}
@@ -38,7 +40,7 @@ export default function Nav() {
                                 aria-current={tab.name === activeTab ? "page" : undefined}
                             >
                                 {tab.name}
-                            </a>
+                            </Link>
                         ))}
                     </nav>
                 </div>
