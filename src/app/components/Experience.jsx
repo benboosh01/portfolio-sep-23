@@ -1,18 +1,20 @@
 const posts = [
     {
         id: 2,
-        title: "Freelance Web Developer",
+        title: "Full Stack Web Developer",
+        company: 'Freelance',
         description: [
             "Engaged in personal projects and built apps that are publicly available.",
             "Developed websites for clients on a freelance basis, contributing to professional and personal growth",
         ],
         skills: ["WordPress", "Tailwind CSS ", "Firebase", "PostgreSQL", 'HTML5', 'React JS', 'JavaScript'],
         date: "Jan 2023 - Present",
-        category: { title: "Full Stack Web Developer", href: "#" },
+        category: { title: "Tech", href: "#" },
     },
     {
         id: 1,
-        title: "A Good Thing (UK)",
+        title: 'Full Stack Web Developer',
+        company: "A Good Thing (UK)",
         description: [
             "Deliver high quality, robust production code for the app ensuring smooth operation at all times.",
             " Implement new features required to improve the functionality of the app.",
@@ -20,11 +22,12 @@ const posts = [
         ],
         skills: ["Svelte", "Firebase", "PostgresSQL", "Bulma CSS"],
         date: "Feb 2023 - Present",
-        category: { title: "Full Stack Web Developer", href: "#" },
+        category: { title: "Tech", href: "#" },
     },
     {
         id: 3,
         title: "Career Transition",
+        company: 'Thailand',
         description: [
             "After completing the Northcoders bootcamp, I embarked on a journey to South East Asia. While travelling, I dedicated myself to deepening my technical knowledge, including areas such as Vue JS, Next JS, Python, Firebase, and Wordpress, while also continuing to strengthen my expertise in the technologies introduced during the bootcamp. This hands-on experience allowed me to solidify and expand upon what I learned. Furthermore, driven by a long-held dream to master a second language, I embraced the challenge by taking lessons in Thai. This experience not only honed my language skills but also fostered a greater sense of adaptability and deepened my immersion into the country's culture.",
         ],
@@ -35,6 +38,7 @@ const posts = [
         {
         id: 4,
         title: "Full Stack Web Developer in Training",
+        company: 'Northcoders Bootcamp Manchester',
         description: [
            'My time as a Northcoders software development student has prepared me for my first junior software development role, during the 3 month bootcamp we followed a practical on the job style curriculum learning common industry best practices such as:', 'Git version control', 'Test driven development', 'Pair programming'
         ],
@@ -45,6 +49,7 @@ const posts = [
     {
         id: 5,
         title: "Outbound Acquisition Telesales Manager / Executive",
+        company: 'Virgin Media',
         description: [
            'My time as a sales advisor/manager has equipped me with various skills that will aid me my future career:', 'Ability to communicate ideas at all levels from senior leadership to front line employees. ', 'Able to deal effectively with customers/clients and understand their needs as well as provide suitable solutions to their problems. ', ' Resilience, drive and determination to succeed and perform at a high level, providing excellent value to clients, employer and colleagues.', 'Achievements:', 'Consistently exceeded all performance targets', 'Edge Winner 2020; Companywide performance incentive', 'Introduced improved performance reporting for front line advisors as well as senior leaders', 'Introduced and managed a new performance metric (call conversion) to outbound sales which contributed to an extra 1000+ sales versus the previous year.'
         ],
@@ -85,6 +90,12 @@ export default function Experience() {
                                         <a href={post.href}>
                                             <span className="absolute inset-0" />
                                             {post.title}
+                                        </a>
+                                    </h3>
+                                    <h3 className="mt-3 text-md font-semibold leading-6 text-gray-900 group-hover:text-gray-600 pl-1">
+                                        <a href={post.href}>
+                                            <span className="absolute inset-0" />
+                                            {post.company}
                                         </a>
                                     </h3>
                                     <ul>
