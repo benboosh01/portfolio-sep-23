@@ -9,7 +9,9 @@ export default function Home() {
     const titles = [
         "Full Stack Web Developer",
         "Sales Executive",
+        "Web Designer",
         "Sales Leader",
+        "Coffee Addict",
     ];
     let index = 0;
 
