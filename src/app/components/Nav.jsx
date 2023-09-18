@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 const tabs = [
     { name: "Home", href: "#top", current: true },
-    { name: "About", href: "#about", current: false },
     { name: "Projects", href: "#projects", current: false },
     { name: "Freelance", href: "#freelance", current: false },
     { name: "Experience", href: "#experience", current: false },
@@ -23,7 +22,7 @@ export default function Nav() {
             <div>
                 <div className="border-b border-gray-200">
                     <nav
-                        className="-mb-px flex space-x-8 justify-center"
+                        className="-mb-px flex space-x-6 justify-center"
                         aria-label="Tabs"
                     >
                         {tabs.map((tab) => (
