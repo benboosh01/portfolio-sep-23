@@ -17,8 +17,8 @@ function classNames(...classes) {
 export default function Nav() {
     const [activeTab, setActiveTab] = useState("Top");
 
-    return (
-        <div className="sticky top-0 bg-white">
+    return ( 
+        <div className="sticky top-0 bg-white z-20">
             <div>
                 <div className="border-b border-gray-200">
                     <nav
