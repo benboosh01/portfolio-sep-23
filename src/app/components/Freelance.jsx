@@ -10,7 +10,7 @@ const posts = [
 
 export default function Freelance() {
     return (
-        <div className="bg-white py-24" id="freelance">
+        <div className="bg-white py-16" id="freelance">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -21,7 +21,7 @@ export default function Freelance() {
                     {posts.map((post) => (
                         <article
                             key={post.id}
-                            className="relative isolate flex flex-col justify-end bg-gray-900 px-8 pb-8 pt-80 w-80 h96"
+                            className="relative isolate flex flex-col justify-end bg-gray-900 px-8 pb-8 pt-80 w-96 h-full"
                         >
                             <img
                                 src={post.imageUrl}
