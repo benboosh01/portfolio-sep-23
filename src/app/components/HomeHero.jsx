@@ -19,15 +19,15 @@ export default function Home() {
         const typeTitle = (title, i = 0) => {
             if (i < title.length) {
                 setCurrentTitle((prev) => prev + title[i]);
-                setTimeout(() => typeTitle(title, i + 1), 100); // Type each character every 100ms
+                setTimeout(() => typeTitle(title, i + 1), 100); 
             } else {
-                setTimeout(() => rotateTitle(), 2000); // Wait 2 seconds before switching to next title
+                setTimeout(() => rotateTitle(), 2000);
             }
         };
 
         const rotateTitle = () => {
             index = (index + 1) % titles.length;
-            setCurrentTitle(""); // Clear the current title
+            setCurrentTitle(""); 
             setFullTitle(titles[index]);
             typeTitle(titles[index]);
         };
