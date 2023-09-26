@@ -56,14 +56,14 @@ export default function Home() {
                             <GitHubIcon />
                             <LinkedInIcon />
                         </div>
-                        <div className="mt-6 flex items-center justify-center">
+                        {/* <div className="mt-6 flex items-center justify-center">
                             <a
                                 href="#"
-                                className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-300 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Download CV
                             </a>
-                        </div>
+                        </div> */}
                         <div className="flex justify-center mt-6 font-bold">
                             <a href="#about">
                                 <svg
