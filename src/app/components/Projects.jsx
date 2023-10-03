@@ -6,7 +6,7 @@ const projects = [
         name: "Script 4 Thai",
         imageUrl: "/script4thai.png",
         description:
-            "An app for learning the thai script, includes a flashcard game to improve memory rentention.",
+            "An app for learning the thai script, includes a flashcard game to improve memory retention.",
         tech: ["NextJS", "Firebase", "Tailwind"],
         link: 'https://www.script4thai.com'
     },
@@ -15,7 +15,7 @@ const projects = [
         name: "FlashLingual",
         imageUrl: "/globe.png",
         description:
-            "A language learning app that alllows you to create your own flashcards, includes the ability to add audio to your flashcards from the google text to speech API.",
+            "A language learning app that allows you to create your own flashcards, includes the ability to add audio from the google text to speech API.",
         tech: ["NextJS", "Firebase", "Tailwind"],
         link: 'https://www.flashlingual.com'
     },
