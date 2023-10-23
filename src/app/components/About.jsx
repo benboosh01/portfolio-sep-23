@@ -2,7 +2,7 @@ const people = [
     {
         name: "Ben Bushell",
         role: "Full Stack Web Developer / Sales Executive & Leader",
-        imageUrl: "/profile_pic.jpeg",
+        imageUrl: "/profile_pic.jpg",
         bio: (
             <>
                 I'm an experienced sales professional, turned web developer. With

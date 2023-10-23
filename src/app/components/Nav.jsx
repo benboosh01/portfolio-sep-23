@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import Link from 'next/link'
+import Link from "next/link";
 
 const tabs = [
     { name: "Home", href: "#top", current: true },
+    { name: "About", href: "#about", current: false },
     { name: "Projects", href: "#projects", current: false },
     { name: "Freelance", href: "#freelance", current: false },
-    { name: "Experience", href: "#experience", current: false },
 ];
 
 function classNames(...classes) {
@@ -17,7 +17,7 @@ function classNames(...classes) {
 export default function Nav() {
     const [activeTab, setActiveTab] = useState("Top");
 
-    return ( 
+    return (
         <div className="sticky top-0 bg-white z-20">
             <div>
                 <div className="border-b border-gray-200">
@@ -36,7 +36,9 @@ export default function Nav() {
                                         : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
                                     "whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium"
                                 )}
-                                aria-current={tab.name === activeTab ? "page" : undefined}
+                                aria-current={
+                                    tab.name === activeTab ? "page" : undefined
+                                }
                             >
                                 {tab.name}
                             </Link>
