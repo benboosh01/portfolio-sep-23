@@ -4,22 +4,21 @@ import { useState, useEffect } from "react";
 import { EnvelopeIcon, TwitterIcon, GitHubIcon, LinkedInIcon } from "./Icons";
 
 export default function Home() {
-    const [currentTitle, setCurrentTitle] = useState("");
-    const [fullTitle, setFullTitle] = useState("Full Stack Web Developer");
     const titles = [
-        "Full Stack Web Developer",
-        "Sales Executive",
-        "Web Designer",
-        "Sales Leader",
-        "Coffee Addict",
+        "Full Stack Web Development",
+        "Business Development",
+        "Web Design",
+        "Sales Management",
     ];
+    const [currentTitle, setCurrentTitle] = useState("");
+    const [fullTitle, setFullTitle] = useState(titles[0]);
     let index = 0;
 
     useEffect(() => {
         const typeTitle = (title, i = 0) => {
             if (i < title.length) {
                 setCurrentTitle((prev) => prev + title[i]);
-                setTimeout(() => typeTitle(title, i + 1), 100); 
+                setTimeout(() => typeTitle(title, i + 1), 100);
             } else {
                 setTimeout(() => rotateTitle(), 2000);
             }
@@ -27,7 +26,7 @@ export default function Home() {
 
         const rotateTitle = () => {
             index = (index + 1) % titles.length;
-            setCurrentTitle(""); 
+            setCurrentTitle("");
             setFullTitle(titles[index]);
             typeTitle(titles[index]);
         };
@@ -41,10 +40,12 @@ export default function Home() {
                 <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
                     <div className="mx-auto max-w-2xl text-center">
                         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            I'm Ben, a {currentTitle}
-                            <br />
-                            from the U.K
+                            Hello, I'm Ben
                         </h2>
+                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-2">
+                            A freelance professional from the U.K
+                        </h2>
+                        <h3 className="text-2xl text-gray-700 pt-4 sm:text-3xl">{currentTitle}</h3>
                         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
                             Blending technical expertise with an understanding
                             for business needs. Passionate about creating
