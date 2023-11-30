@@ -1,34 +1,25 @@
 const people = [
     {
         name: "Ben Bushell",
-        role: "Full Stack Web Developer / Sales Executive & Leader",
+        role: "Business Development | Full Stack Web Development | Sales Management",
         imageUrl: "/profile_pic.jpg",
         bio: (
             <>
-                I'm an experienced sales professional, turned web developer. With
-                over a decade in sales, I've consistently exceeded targets and
-                developed lasting relationships with clients and colleagues
-                alike.This background has shaped my ability to understand
-                customer needs and deliver solutions that surpass expectations.
-                <br />
-                I recently took on the challenge of learning web development,
-                completing an intensive 3-month bootcamp. Since then, I've been
-                working part-time for a charity, 'A Good Thing', and engaging in
-                freelance projects that have enabled me to apply my diverse
-                skill set. I'm comfortable using a variety of languages,
-                frameworks and tools such as JavaScript, NodeJS, React, NextJS,
-                PostgreSQL, Firebase, Svelte, WordPress, CSS, Tailwind,
-                Bootstrap, and VueJS, and am quick to learn with any task.
-                <br />
-                My sales background provides a perspective that bridges client
-                needs with technical solutions. My commitment goes beyond just
-                delivering on tasks; I aim to provide work that not only meets
-                but exceeds your expectations.
-                <br />
-                Currently, I'm keen on delving deeper into dynamic roles in this
-                sector, with the dual goal of enhancing my expertise and
-                contributing positively to the missions of my clients, employers
-                and colleagues.
+                <p>
+                    With over 11 years of experience in sales for a major telecommunications company, I have always been driven by a passion for connecting with people and delivering exceptional results. In pursuit of evolving my skill set, I recently took a strategic break from sales to enhance my abilities as a Full Stack Web Developer.
+                </p>
+                <p className="pt-4">
+                    Since then I've dedicated my time to work part-time for a charity, 'A Good Thing', and have also been engaged in various freelance projects. These experiences have allowed me to practically apply and continuously expand my diverse skill set, utilising a variety of languages, frameworks, and tools such as JavaScript, NodeJS, React, NextJS, PostgreSQL, Firebase, Svelte, WordPress, CSS, Tailwind, Bootstrap, and VueJS.
+                </p>
+                <p className="pt-4">
+                    My sales background provides a perspective that bridges client
+                    needs with technical solutions. My commitment goes beyond just
+                    delivering on tasks; I aim to provide work that not only meets
+                    but exceeds your expectations.
+                </p>
+                <p className="pt-4">
+                    I am actively exploring new opportunities that allow me to leverage either or both of my skill sets. Whether it's building a web application or spearheading a sales campaign, I bring dedication, a proven track record, and a results-driven approach to every project.
+                </p>
             </>
         ),
         twitterUrl: "#",
@@ -63,12 +54,12 @@ export default function About() {
                                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
                                     {person.name}
                                 </h3>
-                                <p className="text-base leading-7 text-gray-600">
+                                <div className="text-base leading-7 text-gray-600">
                                     {person.role}
-                                </p>
-                                <p className="mt-6 text-sm leading-7 text-gray-600">
+                                </div>
+                                <div className="mt-6 text-sm leading-7 text-gray-600">
                                     {person.bio}
-                                </p>
+                                </div>
                             </div>
                         </li>
                     ))}
