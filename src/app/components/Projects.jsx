@@ -48,19 +48,19 @@ export default function Projects() {
                                 </div>
                             </div>
                             <a
-                                    className="text-gray-500 hover:text-red-400 relative top-8 right-8 p-2"
-                                    aria-hidden="true"
-                                    href={project.link}
-                                    target="_blank"
+                                className="text-gray-500 hover:text-red-400 relative top-8 right-8 p-2"
+                                aria-hidden="true"
+                                href={project.link}
+                                target="_blank"
+                            >
+                                <svg
+                                    className="h-6 w-6"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
                                 >
-                                    <svg
-                                        className="h-6 w-6"
-                                        fill="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
-                                    </svg>
-                                </a>
+                                    <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z" />
+                                </svg>
+                            </a>
                         </div>
 
                         <dl className="divide-y divide-gray-100 px-6 py-4 text-sm leading-6 flex flex-col justify-between h-52 overflow-y-auto">
@@ -70,11 +70,14 @@ export default function Projects() {
                             <div className="flex justify-between gap-x-4 py-3">
                                 <dt className="text-gray-500">Tech Used:</dt>
                                 <dd className="flex items-start gap-x-2">
-                                    <div className="font-medium text-gray-900">
-                                        {project.tech.map((tech) => {
-                                            return tech + ", ";
-                                        })}
-                                    </div>
+                                    <ul className="font-medium text-gray-900 flex gap-1">
+                                        {project.tech.map((tech, i) => (
+                                            <li key={i}>
+                                                {tech}
+                                                {i < project.tech.length - 1 && ", "}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </dd>
                             </div>
                         </dl>
